@@ -86,6 +86,7 @@ width: 1170px;
     .landing .container .text h1{
       font-size: 40px;
       padding: 5px;
+      color: rebeccapurple;
   }
   .landing .container .text  p{
       font-size: 16px;
