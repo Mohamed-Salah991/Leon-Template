@@ -80,6 +80,9 @@ width: 1170px;
   /* End Header   */
 
     /* Start Landing Section  */
+    .landing .container .text {
+      width: 300px;
+    }
     .landing .container .text h1{
       font-size: 40px;
       padding: 5px;
