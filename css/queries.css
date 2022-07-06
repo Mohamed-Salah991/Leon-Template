@@ -1,0 +1,141 @@
+  /* Small */
+  @media (min-width: 768px) {
+    /* width >= 768px  */
+    .container {
+width: 730px;
+    }
+}
+  /* Medium */
+@media (min-width: 992px) {
+    .container {
+width: 950px;
+    }
+}
+  /* Large */
+@media (min-width: 1200px) {
+    .container {
+width: 1170px;
+    }
+
+}
+
+
+
+/* Small Screeen */
+@media(max-width: 690px){
+  .specaial_head{
+    font-size: 60px;
+  }
+  .specaial_head +p{
+    font-size: 15px;
+    margin: -20px 0 0;
+  }
+  /* Start Header   */
+  .header .container .nav_list .links.remove{
+    display: none;
+    transition: all 0.3s ease;
+
+  }
+  .header .container .nav_list .menu{
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    z-index: 100;
+    padding: 20px;
+    transition: all 0.3s ease;
+
+}
+.header .container .nav_list .menu i{
+  font-size: 28px;
+  transition: all 0.3s ease;
+}
+.header .container .nav_list .menu i:hover{
+  transform: scale(1.3);
+}
+
+.header .container .nav_list.active{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+  z-index: 9404;
+  transition: all 0.3s ease;
+
+  
+}
+.header .container .nav_list .links ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 45px;
+  flex-direction: column;
+  font-size: 23px;
+}
+  /* End Header   */
+
+    /* Start Landing Section  */
+    .landing .container .text h1{
+      font-size: 40px;
+      padding: 5px;
+  }
+  .landing .container .text  p{
+      font-size: 16px;
+      padding: 5px;
+  }
+    /* End Landing Section  */
+
+    /* Start Services */
+    .services .container .services_content .col .box{
+      flex-direction: column;
+      text-align: center;
+    }
+    /* End Services */
+}
+
+@media (max-width: 991px) {
+  .about .about-content {
+    grid-template-columns: repeat(3,1fr) ;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "img img img" "text text text";
+    text-align: center;
+    justify-items: center;
+    grid-gap: 60px;
+  }
+  .about .about-content .image {
+    position: relative;
+    max-width: 250px;
+    height: 375px;
+    grid-area: img;
+}
+.about .about-content .text {
+  grid-area: text;
+}
+.about .about-content .text p:first-of-type {
+  margin-bottom: 40px;
+}
+
+  .about .about-content .image::after {
+    content: "";
+    display: none;
+}
+}
+
+
+@media (max-width: 1199px) {
+.services_content .col .image{
+display: none;
+}
+}
+
+@media (max-width: 767px) {
+  .contact .info .label,
+  .contact .info .link {
+    font-size: 25px;
+  }
+}
